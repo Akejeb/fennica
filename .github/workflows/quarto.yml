@@ -34,7 +34,7 @@ jobs:
         run: Rscript -e 'install.packages("devtools")'
         
       - name: Install comhis package from GitHub
-        run: Rscript -e 'devtools::install_github("comhis/comhis")'
+        run: Rscript -e 'devtools::install_github("comhis/comhis",force = TRUE)'
 
       - uses: quarto-dev/quarto-actions/setup@v2
           
